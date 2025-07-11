@@ -16,7 +16,7 @@ class CustomBottomNav extends StatelessWidget {
     return Container(
       height: 80,
       decoration: BoxDecoration(
-        color: Get.theme.colorScheme.surface,
+        color: Theme.of(context).colorScheme.surface,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -97,16 +97,16 @@ class _NavItem extends StatelessWidget {
             icon,
             size: 28,
             color: isActive
-                ? Get.theme.colorScheme.primary
-                : Get.theme.colorScheme.onSurface.withOpacity(0.5),
+                ? Theme.of(context).colorScheme.primary
+                : Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
           ),
           const SizedBox(height: 4),
           Text(
             label,
             style: Get.textTheme.labelSmall?.copyWith(
               color: isActive
-                  ? Get.theme.colorScheme.primary
-                  : Get.theme.colorScheme.onSurface.withOpacity(0.5),
+                  ? Theme.of(context).colorScheme.primary
+                  : Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
               fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
             ),
           ),

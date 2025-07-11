@@ -23,7 +23,7 @@ class SplashScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              'Bill Tracker',
+              'BillGuard',
               style: Get.textTheme.headlineMedium?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: Get.theme.colorScheme.onBackground,
